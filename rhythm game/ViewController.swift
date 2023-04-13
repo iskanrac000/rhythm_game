@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer?
     
     
+    @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var button: UIButton!
     @IBAction func buttonTap(_ sender: Any) {
         if let player = player, player.isPlaying{
@@ -51,6 +52,16 @@ class ViewController: UIViewController {
                 print("Something went wrong.")
             }
         }
+        
+        
+        
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.albumImageView.transform = CGAffineTransform(translationX: 0, y: 100)
+
+        })
+        
+
     }
     
     
