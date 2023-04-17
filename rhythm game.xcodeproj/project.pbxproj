@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35CFCC9929ED810C001A8DFB /* Night Drift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */; };
+		35CFCC9B29ED838D001A8DFB /* pancakeIsLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */; };
 		CC4401D829E58EFA00EEDFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4401D729E58EFA00EEDFF6 /* AppDelegate.swift */; };
 		CC4401DA29E58EFA00EEDFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4401D929E58EFA00EEDFF6 /* SceneDelegate.swift */; };
 		CC4401DC29E58EFA00EEDFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4401DB29E58EFA00EEDFF6 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Night Drift.mp3"; sourceTree = "<group>"; };
+		35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pancakeIsLove.mp3; sourceTree = "<group>"; };
 		CC4401D429E58EFA00EEDFF6 /* rhythm game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rhythm game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4401D729E58EFA00EEDFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4401D929E58EFA00EEDFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		CC4401D629E58EFA00EEDFF6 /* rhythm game */ = {
 			isa = PBXGroup;
 			children = (
+				35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */,
+				35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */,
 				CC4401EB29E59CC500EEDFF6 /* relaxing.mp3 */,
 				CC4401D729E58EFA00EEDFF6 /* AppDelegate.swift */,
 				CC4401D929E58EFA00EEDFF6 /* SceneDelegate.swift */,
@@ -129,8 +135,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4401EC29E59CC500EEDFF6 /* relaxing.mp3 in Resources */,
+				35CFCC9929ED810C001A8DFB /* Night Drift.mp3 in Resources */,
 				CC4401E429E58F0100EEDFF6 /* LaunchScreen.storyboard in Resources */,
 				CC4401E129E58F0100EEDFF6 /* Assets.xcassets in Resources */,
+				35CFCC9B29ED838D001A8DFB /* pancakeIsLove.mp3 in Resources */,
 				CC4401DF29E58EFA00EEDFF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

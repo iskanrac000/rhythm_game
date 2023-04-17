@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         }
         else{
             //set up player and play
-            let urlString = Bundle.main.path(forResource: "relaxing", ofType: "mp3")
+            let urlString = Bundle.main.path(forResource: "Night Drift", ofType: "mp3")
             
             do{
                 try AVAudioSession.sharedInstance().setMode(.default)
