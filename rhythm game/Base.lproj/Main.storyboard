@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rhythm_game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="homeScreen" customModule="rhythm_game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,6 +47,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhh-qM-t6M"/>
+                                    <action selector="submitText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JvT-NX-Je9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,16 +57,17 @@
                     <connections>
                         <outlet property="albumImageView" destination="H0a-nu-Tbh" id="Y7w-Gu-2gO"/>
                         <outlet property="button" destination="olM-0Z-KI8" id="pcC-mA-cSR"/>
+                        <outlet property="textField" destination="z4d-tg-zKM" id="or3-rk-dey"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.399999999999999" y="81.409295352323838"/>
         </scene>
-        <!--View Controller-->
+        <!--Selection Screen-->
         <scene sceneID="UPz-ux-Fkf">
             <objects>
-                <viewController id="UGV-qN-WR9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second_controller" modalPresentationStyle="fullScreen" id="UGV-qN-WR9" customClass="selectionScreen" customModule="rhythm_game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DeK-wZ-srQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,11 +106,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <connections>
+                                    <segue destination="HZY-PV-YyO" kind="show" id="DIv-N5-syX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I6l-7h-fpO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bMm-mS-03v"/>
+                    <connections>
+                        <outlet property="selectionMainText" destination="NVX-ov-2C5" id="wDs-R3-kRK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwj-AX-F7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,7 +128,7 @@
             <objects>
                 <viewController id="HZY-PV-YyO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gwX-qe-zWI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-fm-c3G">
@@ -158,6 +167,7 @@
                         <viewLayoutGuide key="safeArea" id="Lsq-SQ-OlS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WPx-xf-5G9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWQ-cq-KZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

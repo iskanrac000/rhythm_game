@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		354168FC29F0190300E39A01 /* pancakeIsLoveEdited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 354168FB29F0190300E39A01 /* pancakeIsLoveEdited.mp3 */; };
+		354168FE29F020D800E39A01 /* selectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354168FD29F020D800E39A01 /* selectionScreen.swift */; };
 		35CFCC9929ED810C001A8DFB /* Night Drift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */; };
 		35CFCC9B29ED838D001A8DFB /* pancakeIsLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */; };
 		CC4401D829E58EFA00EEDFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4401D729E58EFA00EEDFF6 /* AppDelegate.swift */; };
 		CC4401DA29E58EFA00EEDFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4401D929E58EFA00EEDFF6 /* SceneDelegate.swift */; };
-		CC4401DC29E58EFA00EEDFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4401DB29E58EFA00EEDFF6 /* ViewController.swift */; };
+		CC4401DC29E58EFA00EEDFF6 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4401DB29E58EFA00EEDFF6 /* homeScreen.swift */; };
 		CC4401DF29E58EFA00EEDFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4401DD29E58EFA00EEDFF6 /* Main.storyboard */; };
 		CC4401E129E58F0100EEDFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4401E029E58F0100EEDFF6 /* Assets.xcassets */; };
 		CC4401E429E58F0100EEDFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4401E229E58F0100EEDFF6 /* LaunchScreen.storyboard */; };
@@ -21,12 +22,13 @@
 
 /* Begin PBXFileReference section */
 		354168FB29F0190300E39A01 /* pancakeIsLoveEdited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pancakeIsLoveEdited.mp3; sourceTree = "<group>"; };
+		354168FD29F020D800E39A01 /* selectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectionScreen.swift; sourceTree = "<group>"; };
 		35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Night Drift.mp3"; sourceTree = "<group>"; };
 		35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pancakeIsLove.mp3; sourceTree = "<group>"; };
 		CC4401D429E58EFA00EEDFF6 /* rhythm game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rhythm game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4401D729E58EFA00EEDFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4401D929E58EFA00EEDFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC4401DB29E58EFA00EEDFF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC4401DB29E58EFA00EEDFF6 /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
 		CC4401DE29E58EFA00EEDFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC4401E029E58F0100EEDFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4401E329E58F0100EEDFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,11 +72,12 @@
 				CC4401EB29E59CC500EEDFF6 /* relaxing.mp3 */,
 				CC4401D729E58EFA00EEDFF6 /* AppDelegate.swift */,
 				CC4401D929E58EFA00EEDFF6 /* SceneDelegate.swift */,
-				CC4401DB29E58EFA00EEDFF6 /* ViewController.swift */,
+				CC4401DB29E58EFA00EEDFF6 /* homeScreen.swift */,
 				CC4401DD29E58EFA00EEDFF6 /* Main.storyboard */,
 				CC4401E029E58F0100EEDFF6 /* Assets.xcassets */,
 				CC4401E229E58F0100EEDFF6 /* LaunchScreen.storyboard */,
 				CC4401E529E58F0100EEDFF6 /* Info.plist */,
+				354168FD29F020D800E39A01 /* selectionScreen.swift */,
 			);
 			path = "rhythm game";
 			sourceTree = "<group>";
@@ -154,8 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4401DC29E58EFA00EEDFF6 /* ViewController.swift in Sources */,
+				CC4401DC29E58EFA00EEDFF6 /* homeScreen.swift in Sources */,
 				CC4401D829E58EFA00EEDFF6 /* AppDelegate.swift in Sources */,
+				354168FE29F020D800E39A01 /* selectionScreen.swift in Sources */,
 				CC4401DA29E58EFA00EEDFF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

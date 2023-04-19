@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  homeScreen.swift
 //  rhythm game
 //
 //  Created by Rachel on 4/11/23.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class homeScreen: UIViewController {
 
 
     
@@ -18,11 +18,41 @@ class ViewController: UIViewController {
         
     }
     
+    
+    
     var player: AVAudioPlayer?
     
     
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var button: UIButton!
+    
+    
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    
+    
+    
+    
+    @IBAction func submitText(_ sender: Any) {
+        let fieldText = textField.text!
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondController = storyboard.instantiateViewController(withIdentifier: "second_controller") as! selectionScreen
+        
+        secondController.loadViewIfNeeded()
+        secondController.setup(name: fieldText)
+        
+        
+        
+        self.show(secondController, sender: (Any).self)
+        //print(fieldText)
+        
+        
+        
+    }
+    
+    
+    
     @IBAction func buttonTap(_ sender: Any) {
         if let player = player, player.isPlaying{
             //stop playback
