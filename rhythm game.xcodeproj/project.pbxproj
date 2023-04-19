@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354168FC29F0190300E39A01 /* pancakeIsLoveEdited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 354168FB29F0190300E39A01 /* pancakeIsLoveEdited.mp3 */; };
 		35CFCC9929ED810C001A8DFB /* Night Drift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */; };
 		35CFCC9B29ED838D001A8DFB /* pancakeIsLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */; };
 		CC4401D829E58EFA00EEDFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4401D729E58EFA00EEDFF6 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		354168FB29F0190300E39A01 /* pancakeIsLoveEdited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pancakeIsLoveEdited.mp3; sourceTree = "<group>"; };
 		35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Night Drift.mp3"; sourceTree = "<group>"; };
 		35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pancakeIsLove.mp3; sourceTree = "<group>"; };
 		CC4401D429E58EFA00EEDFF6 /* rhythm game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rhythm game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 		CC4401D629E58EFA00EEDFF6 /* rhythm game */ = {
 			isa = PBXGroup;
 			children = (
+				354168FB29F0190300E39A01 /* pancakeIsLoveEdited.mp3 */,
 				35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */,
 				35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */,
 				CC4401EB29E59CC500EEDFF6 /* relaxing.mp3 */,
@@ -138,6 +141,7 @@
 				35CFCC9929ED810C001A8DFB /* Night Drift.mp3 in Resources */,
 				CC4401E429E58F0100EEDFF6 /* LaunchScreen.storyboard in Resources */,
 				CC4401E129E58F0100EEDFF6 /* Assets.xcassets in Resources */,
+				354168FC29F0190300E39A01 /* pancakeIsLoveEdited.mp3 in Resources */,
 				35CFCC9B29ED838D001A8DFB /* pancakeIsLove.mp3 in Resources */,
 				CC4401DF29E58EFA00EEDFF6 /* Main.storyboard in Resources */,
 			);
