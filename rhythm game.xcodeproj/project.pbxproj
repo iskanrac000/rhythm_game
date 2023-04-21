@@ -18,6 +18,8 @@
 		CC4401E129E58F0100EEDFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4401E029E58F0100EEDFF6 /* Assets.xcassets */; };
 		CC4401E429E58F0100EEDFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4401E229E58F0100EEDFF6 /* LaunchScreen.storyboard */; };
 		CC4401EC29E59CC500EEDFF6 /* relaxing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC4401EB29E59CC500EEDFF6 /* relaxing.mp3 */; };
+		CC57118B29F2C2430076E644 /* pineapple.png in Resources */ = {isa = PBXBuildFile; fileRef = CC57118A29F2C2430076E644 /* pineapple.png */; };
+		CC57118F29F2C9A70076E644 /* songScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57118E29F2C9A70076E644 /* songScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		CC4401E329E58F0100EEDFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4401E529E58F0100EEDFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4401EB29E59CC500EEDFF6 /* relaxing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relaxing.mp3; sourceTree = "<group>"; };
+		CC57118A29F2C2430076E644 /* pineapple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pineapple.png; sourceTree = SOURCE_ROOT; };
+		CC57118E29F2C9A70076E644 /* songScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		CC4401D629E58EFA00EEDFF6 /* rhythm game */ = {
 			isa = PBXGroup;
 			children = (
+				CC57118A29F2C2430076E644 /* pineapple.png */,
 				354168FB29F0190300E39A01 /* pancakeIsLoveEdited.mp3 */,
 				35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */,
 				35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */,
@@ -78,6 +83,7 @@
 				CC4401E229E58F0100EEDFF6 /* LaunchScreen.storyboard */,
 				CC4401E529E58F0100EEDFF6 /* Info.plist */,
 				354168FD29F020D800E39A01 /* selectionScreen.swift */,
+				CC57118E29F2C9A70076E644 /* songScreen.swift */,
 			);
 			path = "rhythm game";
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 				CC4401E129E58F0100EEDFF6 /* Assets.xcassets in Resources */,
 				354168FC29F0190300E39A01 /* pancakeIsLoveEdited.mp3 in Resources */,
 				35CFCC9B29ED838D001A8DFB /* pancakeIsLove.mp3 in Resources */,
+				CC57118B29F2C2430076E644 /* pineapple.png in Resources */,
 				CC4401DF29E58EFA00EEDFF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +167,7 @@
 				CC4401DC29E58EFA00EEDFF6 /* homeScreen.swift in Sources */,
 				CC4401D829E58EFA00EEDFF6 /* AppDelegate.swift in Sources */,
 				354168FE29F020D800E39A01 /* selectionScreen.swift in Sources */,
+				CC57118F29F2C9A70076E644 /* songScreen.swift in Sources */,
 				CC4401DA29E58EFA00EEDFF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -93,21 +93,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-ph-9Do">
-                                <rect key="frame" x="123" y="169" width="129" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RvT-U6-9tv">
-                                <rect key="frame" x="123" y="399" width="129" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yt-Aw-gqM">
-                                <rect key="frame" x="282" y="597" width="54" height="31"/>
+                                <rect key="frame" x="276" y="597" width="60" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
-                                    <segue destination="HZY-PV-YyO" kind="show" id="DIv-N5-syX"/>
+                                    <action selector="nextButtonTapped:" destination="UGV-qN-WR9" eventType="touchUpInside" id="t42-db-VRt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcg-Ah-5KE">
+                                <rect key="frame" x="123" y="411" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7A-fR-ftL">
+                                <rect key="frame" x="123" y="411" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="song2Button:" destination="UGV-qN-WR9" eventType="touchUpInside" id="Lqv-JO-bhg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZD-Nh-ZJd">
+                                <rect key="frame" x="75" y="156" width="225" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pineapple.png"/>
+                                <connections>
+                                    <action selector="song1Button:" destination="UGV-qN-WR9" eventType="touchUpInside" id="g4l-tm-Zpm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -116,19 +132,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="bMm-mS-03v"/>
                     <connections>
+                        <outlet property="nextButton" destination="2Yt-Aw-gqM" id="gSv-bA-npx"/>
                         <outlet property="selectionMainText" destination="NVX-ov-2C5" id="wDs-R3-kRK"/>
+                        <outlet property="song1Outlet" destination="aZD-Nh-ZJd" id="PBI-q9-vpi"/>
+                        <outlet property="song2Outlet" destination="Wcg-Ah-5KE" id="YRj-q7-0Rs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwj-AX-F7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="81"/>
+            <point key="canvasLocation" x="752.79999999999995" y="80.50974512743629"/>
         </scene>
-        <!--View Controller-->
+        <!--Song Screen-->
         <scene sceneID="PsP-Zb-doB">
             <objects>
-                <viewController id="HZY-PV-YyO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="third_controller" modalPresentationStyle="fullScreen" id="HZY-PV-YyO" customClass="songScreen" customModule="rhythm_game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gwX-qe-zWI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-fm-c3G">
@@ -175,6 +194,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pineapple.png" width="225" height="225"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

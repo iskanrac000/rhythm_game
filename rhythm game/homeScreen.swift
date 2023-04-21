@@ -54,43 +54,43 @@ class homeScreen: UIViewController {
     
     
     @IBAction func buttonTap(_ sender: Any) {
-        if let player = player, player.isPlaying{
-            //stop playback
-            player.stop()
-        }
-        else{
-            //set up player and play
-            let urlString = Bundle.main.path(forResource: "Night Drift", ofType: "mp3")
-            
-            do{
-                try AVAudioSession.sharedInstance().setMode(.default)
-                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-                
-                guard let urlString = urlString else{
-                    return
-                }
-                
-                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
-                guard let player = player else{
-                    return
-                }
-                
-                player.play()
-                
-            }
-            catch{
-                print("Something went wrong.")
-            }
-        }
-        
-        
-        
-        
+//        if let player = player, player.isPlaying{
+//            //stop playback
+//            player.stop()
+//        }
+//        else{
+//            //set up player and play
+//            let urlString = Bundle.main.path(forResource: "Night Drift", ofType: "mp3")
+//
+//            do{
+//                try AVAudioSession.sharedInstance().setMode(.default)
+//                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+//
+//                guard let urlString = urlString else{
+//                    return
+//                }
+//
+//                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+//                guard let player = player else{
+//                    return
+//                }
+//
+//                player.play()
+//
+//            }
+//            catch{
+//                print("Something went wrong.")
+//            }
+//        }
+
+
+
+
         UIView.animate(withDuration: 0.5, animations: {
             self.albumImageView.transform = CGAffineTransform(translationX: 0, y: 100)
 
         })
-        
+
 
     }
     
