@@ -59,6 +59,11 @@ class selectionScreen: UIViewController {
         
         
         if song1Tapped{
+            
+            //doesn't work lol
+            
+        thirdController.startGame()
+            
         if let player = player, player.isPlaying{
             //stop playback
             player.stop()
@@ -126,6 +131,7 @@ class selectionScreen: UIViewController {
                 }
             }
         }
+ 
     
 
         

@@ -157,6 +157,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Button" cornerStyle="capsule">
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="firstButtonTapped:" destination="HZY-PV-YyO" eventType="touchUpInside" id="jsm-tq-T2Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYO-l7-d0e">
                                 <rect key="frame" x="104" y="564" width="79" height="79"/>
@@ -187,6 +190,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="WPx-xf-5G9"/>
+                    <connections>
+                        <outlet property="firstButton" destination="t4a-fm-c3G" id="j3h-JW-1yl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWQ-cq-KZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

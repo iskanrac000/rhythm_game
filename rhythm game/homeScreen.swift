@@ -86,10 +86,7 @@ class homeScreen: UIViewController {
 
 
 
-        UIView.animate(withDuration: 0.5, animations: {
-            self.albumImageView.transform = CGAffineTransform(translationX: 0, y: 100)
-
-        })
+        
 
 
     }
