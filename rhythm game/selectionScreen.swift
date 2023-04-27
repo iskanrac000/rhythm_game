@@ -62,7 +62,7 @@ class selectionScreen: UIViewController {
             
             //doesn't work lol
             
-        thirdController.startGame()
+//        thirdController.startGame()
             
         if let player = player, player.isPlaying{
             //stop playback
