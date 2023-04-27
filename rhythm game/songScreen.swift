@@ -26,20 +26,47 @@ class songScreen: UIViewController {
         // Do any additional setup after loading the view.
 
     }
-    override func viewDidAppear(_ animated: Bool){
+    
+    var song = 1
+    
+    func assignSong(s: Int){
+        song = s
         
-        super.viewDidAppear(playSongNotes())
+    }
+    
+    override func viewDidAppear(_ animated: Bool){
+        if (song == 1){
+            super.viewDidAppear(playSongNotes1())
+            
+        }
+        if (song == 2){
+            super.viewDidAppear(playSongNotes2())
+        }
+        
+    
+        
+
       
     }
     
-    func playSongNotes() -> Bool{
-        print("hi")
+    func playSongNotes1() -> Bool{
         let imageName = "pineapple.png"
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
         imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         view.addSubview(imageView)
-        animate(x: imageView)
+        animate1(x: imageView)
+        
+        return true
+        
+    }
+    func playSongNotes2() -> Bool{
+        let imageName = "pineapple.png"
+        let image = UIImage(named: imageName)
+        let imageView = UIImageView(image: image!)
+        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        view.addSubview(imageView)
+        animate2(x: imageView)
         
         return true
         
@@ -55,7 +82,7 @@ class songScreen: UIViewController {
     }
 
 
-    func animate(x: UIImageView){
+    func animate1(x: UIImageView){
         UIView.animate(withDuration: 10, animations: {
             x.transform = CGAffineTransform(translationX: 0, y: 500)
 
@@ -64,6 +91,18 @@ class songScreen: UIViewController {
 
 
     }
+    
+    
+    func animate2(x: UIImageView){
+        UIView.animate(withDuration: 10, animations: {
+            x.transform = CGAffineTransform(translationX: 0, y: 100)
+
+
+        })
+
+
+    }
+    
     
     
     

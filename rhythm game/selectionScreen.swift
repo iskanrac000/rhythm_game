@@ -50,6 +50,8 @@ class selectionScreen: UIViewController {
         let thirdController = storyboard.instantiateViewController(withIdentifier: "third_controller") as! songScreen
         
         thirdController.loadViewIfNeeded()
+        
+        
 
         
         
@@ -59,10 +61,9 @@ class selectionScreen: UIViewController {
         
         
         if song1Tapped{
+            thirdController.assignSong(s: 1)
             
-            //doesn't work lol
-            
-//        thirdController.startGame()
+
             
         if let player = player, player.isPlaying{
             //stop playback
@@ -98,6 +99,8 @@ class selectionScreen: UIViewController {
         }
         }
         if song2Tapped{
+            thirdController.assignSong(s: 2)
+            
             if let player = player, player.isPlaying{
                 //stop playback
                 player.stop()
