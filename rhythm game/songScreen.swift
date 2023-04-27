@@ -50,7 +50,7 @@ class songScreen: UIViewController {
     }
     
     func playSongNotes1() -> Bool{
-        let imageName = "pineapple.png"
+        let imageName = "musicNote.png"
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
         imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
@@ -61,7 +61,7 @@ class songScreen: UIViewController {
         
     }
     func playSongNotes2() -> Bool{
-        let imageName = "pineapple.png"
+        let imageName = "musicNote.png"
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
         imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
