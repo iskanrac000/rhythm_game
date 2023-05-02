@@ -50,14 +50,34 @@ class songScreen: UIViewController {
     }
     
     func playSongNotes1() -> Bool{
+//        let imageName = "musicNote.png"
+//        let image = UIImage(named: imageName)
+//        let imageView = UIImageView(image: image!)
+//        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+//        view.addSubview(imageView)
+//        animate1(x: imageView)
+        noteMap1(delayTime: 2, xVal: 17)
+        noteMap1(delayTime: 2.5, xVal: 104)
+        noteMap1(delayTime: 3, xVal: 191)
+        noteMap1(delayTime: 4, xVal: 278)
+        noteMap1(delayTime: 4.5, xVal: 104)
+        return true
+        
+    }
+    
+    func noteMap1(delayTime: Double, xVal: Double) {
         let imageName = "musicNote.png"
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
-        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        imageView.frame = CGRect(x: xVal, y: -150, width: 100, height: 100)
         view.addSubview(imageView)
-        animate1(x: imageView)
+        //animate1(x: imageView)
+        UIView.animate(withDuration: 10, delay: delayTime, animations: {
+            imageView.transform = CGAffineTransform(translationX: 0, y: 1000)
+
+
+        })
         
-        return true
         
     }
     func playSongNotes2() -> Bool{
@@ -83,11 +103,7 @@ class songScreen: UIViewController {
 
 
     func animate1(x: UIImageView){
-        UIView.animate(withDuration: 10, animations: {
-            x.transform = CGAffineTransform(translationX: 0, y: 500)
-
-
-        })
+      
 
 
     }
