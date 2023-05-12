@@ -9,7 +9,24 @@ import UIKit
 import SwiftUI
 
 class songScreen: UIViewController {
-
+    
+    @IBOutlet weak var button1: UIButton!
+    
+    @IBAction func button1Tapped(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var button2: UIButton!
+    
+    @IBAction func button2Tapped(_ sender: Any) {
+    }
+    @IBOutlet weak var button3: UIButton!
+    
+    @IBAction func button3Tapped(_ sender: Any) {
+    }
+    @IBOutlet weak var button4: UIButton!
+    
+    @IBAction func button4Tapped(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,25 +79,7 @@ class songScreen: UIViewController {
         
         let order = [1, 3, 2, 4, 2, 3, 1, 2, 3, 1, 4, 3, 2, 4, 1, 2]
         
-//        var x = 7.2
-//        for number in order{
-//            if number == 1{
-//                noteMap1(delayTime: x, xVal: 17)
-//            }
-//            if number == 2{
-//                noteMap1(delayTime: x, xVal: 104)
-//            }
-//            if number == 3{
-//                noteMap1(delayTime: x, xVal: 191)
-//            }
-//            if number == 4{
-//                noteMap1(delayTime: x, xVal: 278)
-//            }
-//            x += 1.135
-//        }
-        
-        var x = 8.15
-        var turn = 1
+        var x = 7.2
         for number in order{
             if number == 1{
                 noteMap1(delayTime: x, xVal: 17)
@@ -94,15 +93,33 @@ class songScreen: UIViewController {
             if number == 4{
                 noteMap1(delayTime: x, xVal: 278)
             }
-            
-            if turn < 7 {
-                x += 1.15
-            }
-            if turn >= 7{
-                x += 0.56
-            }
-            turn += 1
+            x += 1.135
         }
+        
+//        var x = 8.15
+//        var turn = 1
+//        for number in order{
+//            if number == 1{
+//                noteMap1(delayTime: x, xVal: 17)
+//            }
+//            if number == 2{
+//                noteMap1(delayTime: x, xVal: 104)
+//            }
+//            if number == 3{
+//                noteMap1(delayTime: x, xVal: 191)
+//            }
+//            if number == 4{
+//                noteMap1(delayTime: x, xVal: 278)
+//            }
+//
+//            if turn < 7 {
+//                x += 1.15
+//            }
+//            if turn >= 7{
+//                x += 0.56
+//            }
+//            turn += 1
+//        }
 
         return true
         
@@ -140,21 +157,17 @@ class songScreen: UIViewController {
     
         
         
-    @IBOutlet weak var firstButton: UIButton!
-    
-    @IBAction func firstButtonTapped(_ sender: Any) {
-      
-    
-    }
-
-
-    func animate1(x: UIImageView){
-      
-
-
-    }
     
     
+
+
+//    func animate1(x: UIImageView){
+//
+//
+//
+//    }
+//
+//
     func animate2(x: UIImageView){
         UIView.animate(withDuration: 10, animations: {
             x.transform = CGAffineTransform(translationX: 0, y: 100)
