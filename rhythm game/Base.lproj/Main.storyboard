@@ -159,7 +159,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="button1Tapped:" destination="HZY-PV-YyO" eventType="touchUpInside" id="2qe-3b-SJ2"/>
-                                    <action selector="firstButtonTapped:" destination="HZY-PV-YyO" eventType="touchUpInside" id="jsm-tq-T2Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYO-l7-d0e">
@@ -205,7 +204,6 @@
                         <outlet property="button2" destination="GYO-l7-d0e" id="FL9-v2-gf6"/>
                         <outlet property="button3" destination="dpq-Gs-hoH" id="bqs-a3-uvm"/>
                         <outlet property="button4" destination="aZv-Zc-q62" id="kg3-fl-4DF"/>
-                        <outlet property="firstButton" destination="t4a-fm-c3G" id="j3h-JW-1yl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWQ-cq-KZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
