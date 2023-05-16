@@ -13,9 +13,6 @@ class songScreen: UIViewController {
     @IBOutlet weak var button1: UIButton!
 
     @IBAction func button1Tapped(_ sender: Any) {
-        if (564 == image.y) {
-            printContent("HIIIIIIII")
-        }
     }
 
     @IBOutlet weak var button2: UIButton!
@@ -60,73 +57,73 @@ class songScreen: UIViewController {
             super.viewDidAppear(playSongNotes1())
             
         }
-        if (song == 2){
-            super.viewDidAppear(playSongNotes2())
-        }
+//        if (song == 2){
+//            super.viewDidAppear(playSongNotes2())
+//        }
         
     
         
-
       
     }
     
 
     
-    func playSongNotes1() -> Bool{
+    //func playSongNotes1() -> Bool{
 //        let imageName = "musicNote.png"
 //        let image = UIImage(named: imageName)
 //        let imageView = UIImageView(image: image!)
 //        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
 //        view.addSubview(imageView)
 //        animate1(x: imageView)
-        
-        let order = [1, 3, 2, 4, 2, 3, 1, 2, 3, 1, 4, 3, 2, 4, 1, 2]
-        
-//        var x = 7.2
-//        for number in order{
-//            if number == 1{
-//                noteMap1(delayTime: x, xVal: 17)
-//            }
-//            if number == 2{
-//                noteMap1(delayTime: x, xVal: 104)
-//            }
-//            if number == 3{
-//                noteMap1(delayTime: x, xVal: 191)
-//            }
-//            if number == 4{
-//                noteMap1(delayTime: x, xVal: 278)
-//            }
-//            x += 1.135
-//        }
-        
-        var x = 8.15
-        var turn = 1
-        for number in order{
-            if number == 1{
-                noteMap1(delayTime: x, xVal: 17)
-            }
-            if number == 2{
-                noteMap1(delayTime: x, xVal: 104)
-            }
-            if number == 3{
-                noteMap1(delayTime: x, xVal: 191)
-            }
-            if number == 4{
-                noteMap1(delayTime: x, xVal: 278)
+        func playSongNotes1() -> Bool{
+    //        let imageName = "musicNote.png"
+    //        let image = UIImage(named: imageName)
+    //        let imageView = UIImageView(image: image!)
+    //        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+    //        view.addSubview(imageView)
+    //        animate1(x: imageView)
+            
+            let order = [1, 3, 2, 4, 2, 3, 1, 2, 3, 1, 4, 3, 2, 4, 1, 2, 1, 3, 4, 2, 3, 1, 1, 3, 4, 2, 1, 3, 4, 1, 2, 3, 3, 4, 2, 1, 2, 4, 1, 3, 4, 4, 1, 2, 1, 3, 2, 2, 4, 3, 1, 2, 4, 2, 1, 2, 3, 1, 4, 3, 4, 2, 3, 4, 4, 1, 3, 2, 1, 2, 1, 3, 4, 2, 1]
+            
+            var x = 8.15
+            var turn = 1
+            for number in order{
+                if number == 1{
+                    noteMap1(delayTime: x, xVal: 17)
+                }
+                if number == 2{
+                    noteMap1(delayTime: x, xVal: 104)
+                }
+                if number == 3{
+                    noteMap1(delayTime: x, xVal: 191)
+                }
+                if number == 4{
+                    noteMap1(delayTime: x, xVal: 278)
+                }
+
+                if turn < 8 {
+                    x += 1.15
+                }
+                else if turn <= 15{
+                    x += 0.56
+                }
+                //new test
+                else if turn < 45{
+                    x += 1.15
+                }
+                else if turn < 50{
+                    x += 0.56
+                }
+                else{
+                    x += 1.15
+                }
+                
+                turn += 1
             }
 
-            if turn < 7 {
-                x += 1.15
-            }
-            if turn >= 7{
-                x += 0.56
-            }
-            turn += 1
+            return true
+            
         }
-
-        return true
-        
-    }
     
     func noteMap1(delayTime: Double, xVal: Double) {
         
@@ -145,7 +142,6 @@ class songScreen: UIViewController {
         })
         
         
-        button1Tapped(<#T##sender: Any##Any#>)
         
         
         
@@ -197,9 +193,10 @@ class songScreen: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+      
     }
     */
 
+
 }
+
