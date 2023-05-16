@@ -13,6 +13,9 @@ class songScreen: UIViewController {
     @IBOutlet weak var button1: UIButton!
 
     @IBAction func button1Tapped(_ sender: Any) {
+        if (564 == image.y) {
+            printContent("HIIIIIIII")
+        }
     }
 
     @IBOutlet weak var button2: UIButton!
@@ -142,18 +145,25 @@ class songScreen: UIViewController {
         })
         
         
-    }
-    func playSongNotes2() -> Bool{
-        let imageName = "musicNote.png"
-        let image = UIImage(named: imageName)
-        let imageView = UIImageView(image: image!)
-        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        view.addSubview(imageView)
-        animate2(x: imageView)
+        button1Tapped(<#T##sender: Any##Any#>)
         
-        return true
+        
+        
         
     }
+    
+    
+//    func playSongNotes2() -> Bool{
+//        let imageName = "musicNote.png"
+//        let image = UIImage(named: imageName)
+//        let imageView = UIImageView(image: image!)
+//        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+//        view.addSubview(imageView)
+//        animate2(x: imageView)
+//
+//        return true
+//
+//    }
     
         
         
