@@ -201,6 +201,13 @@
                                     <action selector="button4Tapped:" destination="HZY-PV-YyO" eventType="touchUpInside" id="x5d-c7-Bqb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="407-Ur-sis">
+                                <rect key="frame" x="98" y="137" width="178" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lsq-SQ-OlS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -211,11 +218,36 @@
                         <outlet property="button2" destination="GYO-l7-d0e" id="FL9-v2-gf6"/>
                         <outlet property="button3" destination="dpq-Gs-hoH" id="bqs-a3-uvm"/>
                         <outlet property="button4" destination="aZv-Zc-q62" id="kg3-fl-4DF"/>
+                        <outlet property="label" destination="407-Ur-sis" id="pla-eR-p8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWQ-cq-KZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1464.8" y="80.50974512743629"/>
+        </scene>
+        <!--End Screen-->
+        <scene sceneID="vZK-9P-xB8">
+            <objects>
+                <viewController storyboardIdentifier="fourth_controller" modalPresentationStyle="fullScreen" id="eQQ-Gn-Vmh" customClass="endScreen" customModule="rhythm_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVL-3H-MON">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijj-bJ-obx">
+                                <rect key="frame" x="94" y="57" width="187" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0iV-Ug-LwZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jX-iR-7S7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="71.514242878560722"/>
         </scene>
     </scenes>
     <resources>

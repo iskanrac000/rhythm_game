@@ -18,17 +18,13 @@ class songScreen: UIViewController {
 
     @IBAction func button1Tapped(_ sender: Any) {
 
-        for note in noteArray{
-            //print(note.frame.origin.y)
-//            print(note.frame.minY)
-            print(note.frame)
-            
-
-//            if note.frame.origin.y > 484 && note.frame.origin.y < 604{
-//                print("hit")
-//            }
-
-        }
+//        for note in noteArray{
+//            //print(note.frame.origin.y)
+////            print(note.frame.minY)
+//            print(note.frame)
+//
+//
+//        }
     }
 
     @IBOutlet weak var button2: UIButton!
@@ -46,7 +42,7 @@ class songScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let timer = Timer.scheduledTimer(timeInterval: 93, target: self, selector: #selector(self.update), userInfo: nil, repeats: false)
         
 //        print("hi")
 //
@@ -61,13 +57,27 @@ class songScreen: UIViewController {
         // Do any additional setup after loading the view.
 
     }
-    
-    
-    let timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { timer in
-        print("wow it finished")
-
+    @IBOutlet weak var label: UILabel!
+    @objc func update() {
+        label.text = "Complete!"
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let fourthController = storyboard.instantiateViewController(withIdentifier: "fourth_controller") as! endScreen
         
+        fourthController.loadViewIfNeeded()
+        
+        
+        self.show(fourthController, sender: (Any).self)
+       
+        
+        // Something cool
     }
+    
+    
+//    let timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { timer in
+//        print("wow it finished")
+//
+//
+//    }
     
     
     var song = 1
@@ -100,6 +110,12 @@ class songScreen: UIViewController {
 //        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
 //        view.addSubview(imageView)
 //        animate1(x: imageView)
+    
+    
+    
+    @objc func time() {
+    }
+        
         func playSongNotes1() -> Bool{
     //        let imageName = "musicNote.png"
     //        let image = UIImage(named: imageName)
@@ -112,8 +128,13 @@ class songScreen: UIViewController {
             
             var x = 8.15
             var turn = 1
+            
+            
             for number in order{
                 if number == 1{
+
+
+                  
                     noteMap1(delayTime: x, xVal: 17)
                 }
                 if number == 2{
@@ -142,7 +163,7 @@ class songScreen: UIViewController {
                 else{
                     x += 1.14
                 }
-                
+             
                 turn += 1
             }
 
