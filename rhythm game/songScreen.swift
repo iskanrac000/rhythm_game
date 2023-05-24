@@ -10,9 +10,25 @@ import SwiftUI
 
 class songScreen: UIViewController {
     
+    var noteArray: [UIImageView] = []
+    
+    @IBOutlet weak var streakLabel: UILabel!
+    
     @IBOutlet weak var button1: UIButton!
 
     @IBAction func button1Tapped(_ sender: Any) {
+
+        for note in noteArray{
+            //print(note.frame.origin.y)
+//            print(note.frame.minY)
+            print(note.frame)
+            
+
+//            if note.frame.origin.y > 484 && note.frame.origin.y < 604{
+//                print("hit")
+//            }
+
+        }
     }
 
     @IBOutlet weak var button2: UIButton!
@@ -30,6 +46,8 @@ class songScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
 //        print("hi")
 //
 //        let imageName = "pineapple.png"
@@ -42,6 +60,13 @@ class songScreen: UIViewController {
 
         // Do any additional setup after loading the view.
 
+    }
+    
+    
+    let timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { timer in
+        print("wow it finished")
+
+        
     }
     
     
@@ -83,7 +108,7 @@ class songScreen: UIViewController {
     //        view.addSubview(imageView)
     //        animate1(x: imageView)
             
-            let order = [1, 3, 2, 4, 2, 3, 1, 2, 3, 1, 4, 3, 2, 4, 1, 2, 1, 3, 4, 2, 3, 1, 1, 3, 4, 2, 1, 3, 4, 1, 2, 3, 3, 4, 2, 1, 2, 4, 1, 3, 4, 4, 1, 2, 1, 3, 2, 2, 4, 3, 1, 2, 4, 2, 1, 2, 3, 1, 4, 3, 4, 2, 3, 4, 4, 1, 3, 2, 1, 2, 1, 3, 4, 2, 1]
+            let order = [1, 3, 2, 4, 2, 3, 1, 2, 3, 1, 4, 3, 2, 4, 1, 2, 1, 3, 4, 2, 3, 1, 1, 3, 4, 2, 1, 3, 4, 1, 2, 3, 3, 4, 2, 1, 2, 4, 1, 3, 4, 4, 1, 2, 1, 3, 2, 2, 4, 3, 1, 2, 4, 2, 1, 2, 3, 1, 4, 3, 4, 2, 3, 4, 4, 1, 3, 2, 1, 2]
             
             var x = 8.15
             var turn = 1
@@ -115,7 +140,7 @@ class songScreen: UIViewController {
                     x += 0.56
                 }
                 else{
-                    x += 1.15
+                    x += 1.14
                 }
                 
                 turn += 1
@@ -140,6 +165,8 @@ class songScreen: UIViewController {
 
 
         })
+        
+        noteArray.append(imageView)
         
         
         
@@ -183,6 +210,8 @@ class songScreen: UIViewController {
 
 
     }
+    
+    
     
     
     

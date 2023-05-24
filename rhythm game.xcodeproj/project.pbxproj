@@ -19,8 +19,9 @@
 		CC4401E129E58F0100EEDFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4401E029E58F0100EEDFF6 /* Assets.xcassets */; };
 		CC4401E429E58F0100EEDFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4401E229E58F0100EEDFF6 /* LaunchScreen.storyboard */; };
 		CC4401EC29E59CC500EEDFF6 /* relaxing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC4401EB29E59CC500EEDFF6 /* relaxing.mp3 */; };
-		CC57118B29F2C2430076E644 /* pineapple.png in Resources */ = {isa = PBXBuildFile; fileRef = CC57118A29F2C2430076E644 /* pineapple.png */; };
 		CC57118F29F2C9A70076E644 /* songScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57118E29F2C9A70076E644 /* songScreen.swift */; };
+		CC85B64C2A1DC6E80082AC24 /* pineapple.png in Resources */ = {isa = PBXBuildFile; fileRef = CC85B64B2A1DC6E80082AC24 /* pineapple.png */; };
+		CC85B6502A1DC7BC0082AC24 /* stereo.png in Resources */ = {isa = PBXBuildFile; fileRef = CC85B64F2A1DC7BC0082AC24 /* stereo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,9 @@
 		CC4401E329E58F0100EEDFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4401E529E58F0100EEDFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4401EB29E59CC500EEDFF6 /* relaxing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relaxing.mp3; sourceTree = "<group>"; };
-		CC57118A29F2C2430076E644 /* pineapple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pineapple.png; sourceTree = SOURCE_ROOT; };
 		CC57118E29F2C9A70076E644 /* songScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songScreen.swift; sourceTree = "<group>"; };
+		CC85B64B2A1DC6E80082AC24 /* pineapple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pineapple.png; path = ../../../Downloads/pineapple.png; sourceTree = "<group>"; };
+		CC85B64F2A1DC7BC0082AC24 /* stereo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stereo.png; path = ../../../Downloads/stereo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +75,14 @@
 			isa = PBXGroup;
 			children = (
 				35A5B8DF29FAB16F00826D41 /* musicNote.png */,
-				CC57118A29F2C2430076E644 /* pineapple.png */,
 				354168FB29F0190300E39A01 /* pancakeIsLoveEdited.mp3 */,
 				35CFCC9A29ED838D001A8DFB /* pancakeIsLove.mp3 */,
+				CC85B64B2A1DC6E80082AC24 /* pineapple.png */,
 				35CFCC9829ED810C001A8DFB /* Night Drift.mp3 */,
 				CC4401EB29E59CC500EEDFF6 /* relaxing.mp3 */,
 				CC4401D729E58EFA00EEDFF6 /* AppDelegate.swift */,
 				CC4401D929E58EFA00EEDFF6 /* SceneDelegate.swift */,
+				CC85B64F2A1DC7BC0082AC24 /* stereo.png */,
 				CC4401DB29E58EFA00EEDFF6 /* homeScreen.swift */,
 				CC4401DD29E58EFA00EEDFF6 /* Main.storyboard */,
 				CC4401E029E58F0100EEDFF6 /* Assets.xcassets */,
@@ -149,14 +152,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC85B64C2A1DC6E80082AC24 /* pineapple.png in Resources */,
 				CC4401EC29E59CC500EEDFF6 /* relaxing.mp3 in Resources */,
 				35A5B8E029FAB16F00826D41 /* musicNote.png in Resources */,
+				CC85B6502A1DC7BC0082AC24 /* stereo.png in Resources */,
 				35CFCC9929ED810C001A8DFB /* Night Drift.mp3 in Resources */,
 				CC4401E429E58F0100EEDFF6 /* LaunchScreen.storyboard in Resources */,
 				CC4401E129E58F0100EEDFF6 /* Assets.xcassets in Resources */,
 				354168FC29F0190300E39A01 /* pancakeIsLoveEdited.mp3 in Resources */,
 				35CFCC9B29ED838D001A8DFB /* pancakeIsLove.mp3 in Resources */,
-				CC57118B29F2C2430076E644 /* pineapple.png in Resources */,
 				CC4401DF29E58EFA00EEDFF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

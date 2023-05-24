@@ -17,7 +17,7 @@ class selectionScreen: UIViewController {
         // Do any additional setup after loading the view.
     }
     func setup(name: String) {
-        selectionMainText.text = name
+        selectionMainText.text = "Pick a song " + name
         
     }
 
